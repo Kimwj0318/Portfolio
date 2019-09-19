@@ -5,6 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,18 +20,22 @@ function App() {
           Learn React
         </a>
       </header>
-      <section className="Personal-info">
-
-      </section>
-      <section className="Project">
-
-      </section>
-      <section className="About">
-
-      </section>
-      <section className="Skills">
-
-      </section>
+      <div className="Top-section">
+        <section className="Personal-info">
+          <p> Personal-info </p>
+        </section>
+        <section className="Project">
+        <p> Projects </p>
+        </section>
+      </div>
+      <div className="BottomSection">
+        <section className="About">
+        <p> About </p>
+        </section>
+        <section className="Skills">
+        <p> Skills </p>
+        </section>
+      </div>
     </div>
   );
 }
