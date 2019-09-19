@@ -1,5 +1,44 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+}
+
+.top {
+  min-height: 100vh;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr, 3fr;
+}
+
+.bottom {
+  min-height: 100vh;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+}
+
+.personal-info {
+  min-width: 25vh;
+  grid-column: 1;
+  background: #CBC5C1;
+}
+
+.project {
+  min-width: 75vh;
+  grid-column: 2;
+  background: #A2AAB0;
+}
+
+.about {
+  min-width: 33vh;
+  grid-column: 1;
+  background: #EBECED;
+}
+
+.skills {
+  min-width: 67vh;
+  grid-column: 2;
+  background: #4C586F;
 }
 
 .App-logo {
