@@ -6,6 +6,10 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 
+const PERSONALINFO = "Personal-info";
+const ABOUT = "About";
+const SKILLS  ="Skills";
+
 function App() {
   const [state, setState] = useState({
     navOption: "Personal-info",
@@ -25,20 +29,22 @@ function App() {
               setNav = {setNav}
             />
           </nav>
-          <PersonalInfo />
+          {state.navOption === PERSONALINFO && (
+            <PersonalInfo />
+          )}
+          {state.navOption === ABOUT && (
+            <About />
+          )}
+          {state.navOption === SKILLS && (
+            <Skills />
+          )}
+
         </section>
         <section className="project">
           <Projects />
         </section>
       </div>
-      <div className="bottom">
-        <section className="about">
-          <About />
-        </section>
-        <section className="skills">
-          <Skills />
-        </section>
-      </div>
+      
     </div>
   );
 }
