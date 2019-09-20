@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo:300&display=swap');
+
+.Content {
+  margin: 10vh;
+  margin-top: 0;
+  min-height: 80vh;
+  background: #fff;
+  border: 1px solid #3E3E3B;
+  font-family: 'Chivo', sans-serif;
+}
+
+.Project {
+  margin: 10vh;
+  min-height: 80vh;
+  background: #fff;
+  border: 1px solid #3E3E3B;
+  font-family: 'Chivo', sans-serif;
+}
+
+.navbar-options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-selected {
+  font-weight: bold;
+}

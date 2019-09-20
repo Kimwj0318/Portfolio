@@ -1,2 +1,11 @@
 import React from "react"
-import "components/components.scss";
+import "./components.scss";
+
+export default function Skills(props) {
+  
+  return (
+    <div className="Content">
+      <p> Skills </p>
+    </div>
+  );
+}

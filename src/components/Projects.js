@@ -1,2 +1,11 @@
 import React from "react"
-import "components/components.scss";
+import "./components.scss";
+
+export default function Projects(props) {
+  
+  return (
+    <div className="Project">
+      <p> Projects </p>
+    </div>
+  );
+}
